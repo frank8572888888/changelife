@@ -31,8 +31,13 @@ ENV/
 *.sqlite
 *.sqlite3
 
-# Model files
-models/
+# Model files (保留目录结构但忽略模型文件)
+models/*.joblib
+models/*.pkl
+models/*.model
+models/*.json
+!models/README.md
+!models/init_models.py
 *.pkl
 *.joblib
 
